@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Product Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #nav-bar{
+                position:fixed;
+                top:0px;
+                width:100%;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                display:inline;
+                text-align:center;
+            }
+            img{
+                float:left;
+                max-height:100px;
+            }
+            .nav-link{
+
+            }
+            #form{
+                margin-top:150px;
+            }
+            #pricing{
+                display:flex;
+                flex-direction:row;
+
+            }
+
+            @media (max-height:576px){
+                article{
+                    width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">
+                <img src="ddl.jpg" alt="Download" id="header-img">
+                <ul>                   
+                    <li>
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#video" class="nav-link">How it Works?</a>
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h2>Handcrafted, home-made masterpieces</h2>
+                <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+                <input type="submit" value="GET STARTED" id="submit" >
+            </form>
+            <section id="features">
+
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced 
+                    locally. This will increase the longevity of your purchase.
+                </p>
+                <br>
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have 
+                    finished making it. We also provide free returns if you are
+                    not satisfied.
+                </p>
+                <br>
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no 
+                    damages or faults and we will check and test the pitch of 
+                    your instrument.
+                </p>
+                <br>
+            </section>
+
+            <video id="video" src="_blank">
+
+            </video>
+            <div id="pricing">
+
+                <article>
+                    <h3>Tenor Trombone </h3>
+                    <p>$600
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </p>
+                    <input type="submit" value="select">
+                </article>
+                <article>
+                    <h3>Bass Trombone </h3>
+                    <p>$900
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </p>
+                    <input type="submit" value="select">
+                </article>
+                <article>
+                    <h3>Valve Trombone  </h3>
+                    <p>$1200
+
+                        Plays similar to a Trumpet
+                        Great for Jazz Bands
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+
+                    </p>
+                    <input type="submit" value="select">
+                </article>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
